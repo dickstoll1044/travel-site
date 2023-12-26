@@ -2,9 +2,7 @@
 
   @mixin clearfix;
 
-
-
-  &--t--padding {
+  &--t-padding {
     padding-top: 80px;
   }
 
@@ -16,7 +14,7 @@
     margin-right: -100px;
   }
 
-  &--gutters-small{
+  &--gutters-small {
     margin-right: -45px;
   }
 
@@ -27,9 +25,11 @@
   &--gutters-large > div {
     padding-right: 100px;
   }
-  &--gutters-small > div{
-    margin-right: -45px;
+
+  &--gutters-small > div {
+    padding-right: 45px;
   }
+
   &__b-margin-until-medium {
     margin-bottom: 1rem;
   }
@@ -62,6 +62,7 @@
     &__medium-8--smaller {
       width: 63%;
     }
+
   }
 
   @mixin atLarge {
@@ -92,9 +93,10 @@
     &__large-8--smaller {
       width: 63%;
     }
-  }
 
-    /* Begin Equal Height Rules */
+  }
+  
+  /* Begin Equal Height Rules */
   &--equal-height-at-medium {
     @mixin atMedium {
       display: flex;
@@ -103,9 +105,9 @@
     & > div {
       float: none;
       display: flex;
-
     }
-  }    
+
+  }
 
   &--equal-height-at-large {
     @mixin atLarge {
@@ -115,8 +117,8 @@
     & > div {
       float: none;
       display: flex;
-
     }
-  }  
+
+  }
 
 }

@@ -14,23 +14,22 @@
     padding-left: 0;
     padding-right: 0;
 
-    @minin atMedium {
+    @mixin atMedium {
       padding-left: 18px;
       padding-right: 18px;
-
     }
-}
-
-&--no-padding-until-large {
-  padding-left: 0;
-  padding-right: 0;
-
-  @minin atLarge {
-    padding-left: 18px;
-    padding-right: 18px;
-
   }
-}
+
+  &--no-padding-until-large {
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin atLarge {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+
   .wrapper {
     padding-left: 0;
     padding-right: 0;
@@ -43,7 +42,5 @@
       margin-bottom: 3.875rem;
     }
   }
-
-
 
 }
